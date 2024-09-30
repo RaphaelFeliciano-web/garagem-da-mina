@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2? family=Fira+Sans:wght@400;900&family=PT+Sans:wght@700&family=Roboto:wght@300;500;900&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #dddddd;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+   
+    margin: 0;
+    padding: 0;
+  }
+
+html{
+      font-size: 62.5%;
+    
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+}
+
+/*estilização do menu*/
+.tooltip {
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+  .content{
+    display: flex;
+ background-color: #4652A0;
+ 
+}
+  .content .logo{ 
+
+    display: flex;
+    width: 15rem;   
+   padding: 10px;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+ .logo{
+width: 1.8rem;
+height:auto;
+cursor: pointer;
+display: flex;
+align-items: center;
+
+} 
+.logo h3{
+
+margin-top: 1rem;
+color: rgb(255, 255, 255);
+/* font-size: 1.6rem; */
+}
+
+.logo img{
+ display: flex;
+ border-radius: 50%;
+width:50px;
+margin:1px;
+}
+.content .menu-lista{
+    background-color: rgba(69, 81, 160, 0.996); 
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.content .menu-lista li a{
+    margin: 10px;
+    border-radius: 50px;
+    padding: 21px;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 200ms ease-in;
+}
+.content .menu-lista li a:hover{
+
+background-color: #ffffff;
+border-bottom: 1px solid #d00707;
+color: #b8b8b8;
+margin: 5px;
+}
+
+
+.primeira-sessao {
+ 
+  background-image: linear-gradient( rgba(74, 86, 164, 0.996), rgba(29, 29, 29, 0.8)), url(../img/GBSTETIC.png);
+
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 2rem; Ajustar conforme necessário */
+
+}
+.primeira-sessao .conteudo-principal{
+    min-height: 100vh; /*/ Garantir altura mínima */
+    width: 100vw;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+
+}
+.primeira-sessao h1{
+    color: rgba(255, 255, 255, 0.996);
+    font-size: 6rem;
+    margin-bottom: 5rem;
+
+}
+.primeira-sessao h2{
+color: rgba(255, 255, 255, 0.996);
+font-size: 2rem;
+font-weight:300;
+margin-bottom: 3rem;
+
+}
+
+.btn button {
+    width: 230px;
+    height: 60px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color:rgba(209, 215, 230, 0.8);
+    border-radius: 10px;
+    color:#0e6b92;
+    font-weight: 700;
+    transition: all 450ms ease-in;
+    margin-top:5rem;
+    
+
+}
+.btn button:hover{
+    color: rgba(52, 6, 96, 0.996);
+    border: 1px solid #1508a6;   
+    background-color: transparent;   
+    
+
+}
+.btn {
+    width:480px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+
+/*Sobre nos */
+.sessao-sobre-nos{
+    display: flex;
+	min-height: 100vh;
+	align-items: center;
+	gap: 50px;
+	justify-content: space-evenly;
+    background-image: linear-gradient(rgba(12, 59, 178, 0.8), rgba(29, 29, 29, 0.8)), url(./img/carro-lavando.jpeg);
+    color: rgba(255, 255, 255, 0.996);
+}
+.conteudo-sobre-nos {
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+}
+
+
+.sessao-sobre-nos.container-foto{
+display: flex;
+flex-direction: column;
+}
+
+.sessao-sobre-nos .container-foto img {
+    width: 100%; /* Ajustado para responsividade */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 50%;
+    object-fit: cover; /* Garante que a imagem preencha todo o espaço */
+  }
+.sessao-sobre-nos .container-foto .foto {
+	
+    max-width: 450px;
+	border-radius: 50%;
+}
+.sessao-sobre-nos .foto.sombra-interna {
+	background: linear-gradient(to right, #142fda, #cfd4e9, #77787a);
+			background-size: 180% 180%;
+	animation: gradient-animation 3s ease infinite;
+	  }
+.conteudo-sobre-nos h2{
+    display: flex;
+    color: rgba(97, 125, 225, 0.996);;
+    font-size: 2rem;
+    margin: 4.5rem;
+
+    }
+
+    .conteudo-sobre-nos p {
+        width: 400px; /* Define a largura do texto */
+        text-align: justify; /* Alinha o texto justificado */
+        font-size: 2rem;  
+    }
+
+/* Solicitação de serviços*/
+.sessao-trabalhos {
+    display: flex;
+    justify-items: center;
+    /* background-image: linear-gradient(rgba(153, 146, 146, 0.8), rgba(113, 106, 106, 0.8)), url(../img/moto-lavando.jpeg); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    }
+.sessao-trabalhos h2{
+    color: rgba(245, 245, 245, 0.996);
+    font-size: 4rem;
+    margin: 4.5rem;
+    text-transform:  uppercase;
+
+}
+
+.conteudo-trabalhos {
+    min-height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+.informacao-trabalho{
+    height: 450px;
+    display: flex;
+   
+    flex-direction: column;
+    align-items: center;
+}
+
+.tooltip {
+    width: 370px;
+    display: none;
+    position: absolute;
+    color: #ffffff;
+    background-color: rgba(120, 133, 230, 0.996); 
+    border: 1px solid #ccc;
+    padding: 15px;
+    z-index: 1;
+    
+}
+
+.show {
+    display: block;
+}
+.conteudo-trabalhos .informacao-trabalho{
+    height: 80%;
+    white-space: nowrap;
+
+    border-radius: 10px;
+    background-color:rgba(120, 133, 230, 0.996); 
+    border:1px solid rgb(88, 255, 180);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+   
+}
+
+/* .conteudo-trabalhos h4{
+    font-size: 1rem;
+    text-decoration: uppercase;
+    margin-bottom: 2rem;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: 20px 100px;
+} */
+
+.especificacoes-de-trabalho{
+    display: grid;
+    margin-top: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+.especificacoes-de-trabalho h3{
+    white-space: nowrap;
+    margin: 10px;
+    color: #cfd4e9;
+    text-transform: uppercase;
+}
+.especificacoes-de-trabalho p{
+    margin: 5px;
+    color: #151516;
+    text-transform: uppercase;
+}
+.sessao-trabalhos .conteudo-trabalhos {
+    padding: 25px;
+    box-shadow: 1px 1px 4px 1px;
+    
+    }
+.conteudo-trabalhos img{
+border-radius: 10%;
+    width: 100%;
+    
+
+}
+.conteudo-trabalhos .informacao-trabalho .solicitacao-veiculo{
+    width: 150px;
+    height: 35px;
+    margin-top: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.996);
+    border-radius:5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #1f1e1f;
+    transition: all 200ms ease-in;
+    }
+.conteudo-trabalhos .informacao-trabalho .solicitacao-veiculo:hover{
+background-color: rgba(227, 227, 227, 0.996);
+color: rgb(0, 0, 0);
+transition:  all 200ms ease-in;
+
+}.lavagem-de-motocicleta { /* Classe para cada item do grid */
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 10px;
+  }
+  .lavagem-de-motocicleta img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Mantém a proporção da imagem */
+  }
+
+
+
+/*contato*/
+.contatos{
+    height: 55rem;
+    width: 100%;
+    background-color:rgba(242, 0, 0, 0.996);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8rem;
+    color: #ffffff;
+    padding-bottom: 4rem;
+}
+
+.contatos h3{
+font-size: 4rem;
+margin-bottom: 2rem;
+font-family:'Roboto',sans-serif;
+
+}
+.contatos-secao{
+    width:650px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+.contatos-secao i{
+margin-right: 1rem;
+
+}
+.contatos-secao div{
+    cursor: pointer;
+
+}
+.contatos-secao div:hover{
+    color:#565656;
+}
+
+
+footer {
+    background-color: #f5f7f8;
+    color: #45474b;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+  
+  margin-top:30px;
+  
+    font-size: 1rem;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #30475e;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+/* repsonsividade JS*/
+
+@media (max-width: 1200px) {
+    .sessao-sobre-nos {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 25px;
+    }
+
+    .conteudo-sobre-nos img {
+        width: 400px;
+        margin-left: -2px;
+    }
+
+    
+}
+
+@media (max-width: 980px) {
+   
+    html {
+        font-size: 80%;
+    }
+    
+}
+
+@media (max-width: 870px) {
+    
+    .content { background-color: rgba(27, 49, 128, 0.996);
+        justify-content: space-between;
+        /* padding: 0px 20px; */
+    }
+
+    .content .menu-lista{
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three {
+        width: 100%;
+        height: 4px;
+        background-color: rgb(61, 47, 120);
+        margin: 6px auto;
+
+        transition-duration: 0.5s ;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+        
+
+    }
+
+    .content.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #1f1e1f;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content.on .logo {
+        display: none;
+    }
+
+    .content.on .menu-toggle {
+        position: absolute;
+        right: 40px;
+        top: 20px;
+    }
+
+    .content.on .menu-lista {
+        display: block;
+        
+    }
+
+    .content.on .menu-lista li {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .content.on .menu-lista li a {
+     
+        display: block;
+    }
+
+
+    .content.on .menu-toggle .one {
+        transform: rotate(45deg) translate(8px, -7px);
+    }
+    .content.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .content.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(20px, -6px);
+    }
+
+    .contatos-secao {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+        
+    }
+
+    .contatos-secao div {
+        margin: 2rem;
+        
+    }
+
+}
+
+
+@media (max-width: 720px) {
+    .primeira-sessao h1 {
+        width: 350px;
+        text-align: center;
+    }
+}
+@media (max-width:980px){
+    .especificacoes-de-trabalho{
+        font-size: 10px;
+    }
+    
+}
+
+@media (max-width: 645px) {
+    .sessao-sobre-nos img {
+        width: 400px;
+    }
+    .conteudo-sobre-nos p {
+        text-align: center;
+        width: 400px;
+        font-size: 34px;
+     }
+     .btn {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+             }
+     .contatos-secao {
+       width: 200px;   
+    }
+    .conteudo-principal h2 {
+        width: 200px;
+        text-align: center;
+    }
+    .btn {
+        width: 150px;
+    }
+}
+
+@media (max-width: 399px) {
+
+    .conteudo-principal h1 {
+       font-size: 3rem;
+    }
+    .conteudo-principal h2 {
+       font-size: 2rem;
+    }
+
+
+    .sessao-sobre-nos img {
+       padding-bottom: 10px;
+        width: 300px;
+        height: auto;
+        /* margin-left: 10px; */
+    }
+
+    .conteudo-sobre-nos p {
+        text-align: center;
+        width: 200px;
+     }
+@media (max-width: 768px) {
+        .sessao-sobre-nos .container-foto img {
+          width: 100%; /* Ajuste para telas menores */
+        }
+      }
+      
+
+    @media (max-width:508px) {
+        footer {
+            font-size: 2rem;
+          }
+        
+    }
+
+    @media (max-width: 768px) {
+
+        .conteudo-trabalhos {
+      
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      
+        }
+} 
+     
+}
