@@ -20,7 +20,7 @@ html{
 /*estilização do menu*/
 .tooltip {
     position: absolute;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
     border: 1px solid #ccc;
     padding: 5px;
     border-radius: 5px;
@@ -83,7 +83,7 @@ margin:1px;
 .content .menu-lista li a{
 
     margin: 10px;
-    border-radius: 50px;
+border-radius: 10%;
     padding: 21px;
     color: rgb(255, 255, 255);
     font-size: 1.5rem;
@@ -93,8 +93,8 @@ margin:1px;
 }
 .content .menu-lista li a:hover{
 
-background-color: #ffffff;
-border-bottom: 1px solid #d00707;
+background-color: #2f16bda9;
+border-bottom: 5px solid #ffffff;
 color: #b8b8b8;
 margin: 5px;
 }
