@@ -383,22 +383,9 @@ footer {
         padding-bottom: 25px;
     }
 
-    .conteudo-sobre-nos img {
-        width: 400px;
-        margin-left: -2px;
-    }
 
     
 }
-
-@media (max-width: 980px) {
-   
-    html {
-        font-size: 80%;
-    }
-    
-}
-
 @media (max-width: 870px) {
     
     .content { background-color: rgba(27, 49, 128, 0.996);
@@ -479,60 +466,8 @@ footer {
     .content.on .menu-toggle .three {
         transform: rotate(-45deg) translate(20px, -6px);
     }
-
-    .contatos-secao {
-        display: block;
-        text-align: center;
-        font-size: 2rem;
-        
-    }
-
-    .contatos-secao div {
-        margin: 2rem;
-        
-    }
-
 }
 
-
-@media (max-width: 720px) {
-    .primeira-sessao h1 {
-        width: 350px;
-        text-align: center;
-    }
-}
-@media (max-width:980px){
-    .especificacoes-de-trabalho{
-        font-size: 10px;
-    }
-    
-}
-
-@media (max-width: 645px) {
-    .sessao-sobre-nos img {
-        width: 400px;
-    }
-    .conteudo-sobre-nos p {
-        text-align: center;
-        width: 400px;
-        font-size: 34px;
-     }
-     .btn {
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-             }
-     .contatos-secao {
-       width: 200px;   
-    }
-    .conteudo-principal h2 {
-        width: 200px;
-        text-align: center;
-    }
-    .btn {
-        width: 150px;
-    }
-}
 
 @media (max-width: 399px) {
 
@@ -543,39 +478,8 @@ footer {
        font-size: 2rem;
     }
 
-
-    .sessao-sobre-nos img {
-       padding-bottom: 10px;
-        width: 300px;
-        height: auto;
-        /* margin-left: 10px; */
-    }
-
     .conteudo-sobre-nos p {
         text-align: center;
         width: 200px;
      }
-@media (max-width: 768px) {
-        .sessao-sobre-nos .container-foto img {
-          width: 100%; /* Ajuste para telas menores */
-        }
-      }
-      
-
-    @media (max-width:508px) {
-        footer {
-            font-size: 2rem;
-          }
-        
-    }
-
-    @media (max-width: 768px) {
-
-        .conteudo-trabalhos {
-      
-          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      
-        }
-} 
-     
 }
