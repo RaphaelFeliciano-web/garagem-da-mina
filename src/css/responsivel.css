@@ -42,7 +42,7 @@
         height: 4px;
         background-color: rgb(61, 47, 120);
         margin: 6px auto;
-
+		
         transition-duration: 0.5s ;
     }
 
@@ -193,14 +193,5 @@
           }
         
     }
-
-    @media (max-width: 768px) {
-
-        .conteudo-trabalhos {
-      
-          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      
-        }
-} 
-     
+ 
 }
