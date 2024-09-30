@@ -174,7 +174,12 @@ margin-bottom: 3rem;
 	align-items: center;
 	gap: 50px;
 	justify-content: space-evenly;
-    background-image: linear-gradient(rgba(12, 59, 178, 0.8), rgba(29, 29, 29, 0.8)), url(./img/carro-lavando.jpeg);
+    background-image: linear-gradient( rgba(74, 86, 164, 0.996), rgba(29, 29, 29, 0.8)), url(../img/imagem-do-quem-somos.jpeg);
+
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
     color: rgba(255, 255, 255, 0.996);
 }
 .conteudo-sobre-nos {
@@ -201,7 +206,7 @@ flex-direction: column;
 	border-radius: 50%;
 }
 .sessao-sobre-nos .foto.sombra-interna {
-	background: linear-gradient(to right, #142fda, #cfd4e9, #77787a);
+	/* background: linear-gradient(to right, #142fda, #cfd4e9, #77787a); */
 			background-size: 180% 180%;
 	animation: gradient-animation 3s ease infinite;
 	  }
@@ -214,7 +219,7 @@ flex-direction: column;
     }
 
     .conteudo-sobre-nos p {
-        width: 400px; /* Define a largura do texto */
+        width: 600px; /* Define a largura do texto */
         text-align: justify; /* Alinha o texto justificado */
         font-size: 2rem;  
     }
@@ -223,10 +228,12 @@ flex-direction: column;
 .sessao-trabalhos {
     display: flex;
     justify-items: center;
-    /* background-image: linear-gradient(rgba(153, 146, 146, 0.8), rgba(113, 106, 106, 0.8)), url(../img/moto-lavando.jpeg); */
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: linear-gradient( rgba(126, 137, 207, 0.996), rgba(202, 196, 196, 0.8)), url(../img/moto-lavando.jpeg);
+
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
     flex-direction: column;
     align-items: center;
     }
