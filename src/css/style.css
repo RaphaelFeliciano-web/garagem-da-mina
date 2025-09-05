@@ -346,15 +346,14 @@ background-color: rgba(227, 227, 227, 0.996);
 color: rgb(0, 0, 0);
 transition:  all 200ms ease-in;
 
-}.lavagem-de-motocicleta { /* Classe para cada item do grid */
-    background-color: #f0f0f0;
+}.card-conteudo-descricao{ /* Classe para cada item do grid */
+    background-color: #132c7383;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
     padding: 10px;
   }
-  .lavagem-de-motocicleta img {
+  .card-conteudo-descricao img {
     width: 100%;
     height: 150px;
     object-fit: cover; /* Mantém a proporção da imagem */
@@ -362,7 +361,7 @@ transition:  all 200ms ease-in;
 
 footer {
     background-color: #f5f7f8;
-    color: #45474b;
+    color: #2455b6;
     text-align: center;
     padding: 20px;
     width: 100%;
@@ -373,10 +372,11 @@ footer {
   }
   
   footer a {
-    text-decoration: none;
+
     color: #30475e;
+
   }
   
-  footer a:hover {
+  /* footer a:hover {
     text-decoration: underline;
-  }
+  } */
