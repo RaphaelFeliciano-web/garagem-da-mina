@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+   
     <link rel="stylesheet" href="./src/css/reset.css"> 
    
     <link rel="stylesheet" href="./src/css/style.css">
@@ -24,18 +28,17 @@
         
         <div class="logo">
             <h3>GARAGEM DA MINA</h3>
-            <img src="./src/img/GBSTETIC.png" alt="logotipo">
+            <img src="./src/imagens/logo.jpg" alt="Logo da Garagem da Mina">
 
         </div>
         <ul class="menu-lista">
             <li><a href="#home">home</a></li>
             <li><a href="#sobrenos">quem somos</a></li>
             <li><a href="#veiculos">Trabalhos</a></li>
-            <li><a href="#Localizacao">Localização</a></li>
-            <li><a href="#contatos">Contato</a> </li>
-            <li><a href="#contato-form"><i class="bi bi-person-lines-fill"></i></a></li>
+            <!-- Links para futuras seções
+            <li><a href="#Localizacao">Localização</a></li> -->
             <li><a
-                href="https://web.whatsapp.com/send/?phone=5519987332697&text=Estou+interessado(a)+em+agendar+uma+lavagem+detalhada!!"
+                href="whatsapp://send?phone=5519987332697&text=Olá!+Gostaria+de+mais+informações+sobre+os+serviços."
                 target="_blank"><i class="bi bi-whatsapp"></i></a></li>
         </ul>
 
@@ -48,187 +51,186 @@
     </header>
     <section class="primeira-sessao" id="home">
         <div class="conteudo-principal">
-            <h1>GARAGEM DA MINA</h1>
-            <h2>SEU VEICULO EM BOAS MÃOS</h2>
+            <h1>Renove Seu Carro Por Dentro</h1>
+            <h2>Descubra a sensação de um carro novo com nossa higienização completa.</h2>
             <div class="btn">
-                <!-- <button><a
-                        href="/*https://web.whatsapp.com/send/?phone=5519987332697&text=Estou+interessado(a)+em+agendar+uma+lavagem+detalhada!!"
-                        target="_blank" class="solicitacao">Faça sua solicitação</a></button> -->
-<button>    <a
-     href="whatsapp://send?phone=5519987332697&text=Estou+interessado(a)+em+agendar+uma+lavagem+detalhada!!" target="_blank" 
-     href="/*https://web.whatsapp.com/send/?phone=5519987332697&text=Estou+interessado(a)+em+agendar+uma+lavagem+detalhada!!"
-     class="solicitacao">Faça sua solicitação</a></button>
+                <button><a
+                    href="whatsapp://send?phone=5519987332697&text=Estou+interessado(a)+em+agendar+uma+higienização+completa!" target="_blank" 
+                    class="solicitacao">Agendar Higienização</a></button>
             </div>
         </div>
     </section>
 
-    <section class="sessao-sobre-nos" id="sobrenos">
+    <section class="sessao-sobre-nos animate-on-scroll" id="sobrenos">
 
         <div class="conteudo-sobre-nos  ">
-            <h2>SOBRE NÓS</h2>
+            <h2>Nossa Paixão por Detalhes</h2>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ut cupiditate, ex beatae ab repudiandae (texto sobre oque te motiva a realizar seu trablaho())
-                velit cum officiis temporibus veritatis iste sit tempore, reprehenderit sint delectus molestiae at quae
-                facilis. </p>
+            <p>Não apenas lavamos carros, nós os restauramos. Cada veículo é um projeto único, recebendo atenção meticulosa para entregar não apenas limpeza, mas a sensação de dirigir um carro novo. Essa é a nossa paixão, esse é o padrão Garagem da Mina.</p>
 
         </div>
         <div class="container-foto">
             <div class="foto sombra-interna">
-                <img src="./src/img/GBSTETIC.png" alt="foto do portfólio do Raphael Fleiciano" />
+                <img src="./src/imagens/fundo-sobre-nos.jpg" alt="Profissional de estética automotiva realizando polimento técnico" />
             </div>
         </div>
     </section>
 
-    <div class="sessao-trabalhos " id="veiculos">
+    <section class="secao-servicos-expansivel animate-on-scroll">
+        <h2>Nossos Serviços</h2>
+        <div class="servicos-slider-wrapper">
+            <button id="servicos-prev-slide" class="servicos-slide-button" aria-label="Serviço anterior">&lt;</button>
+            <div class="servicos-slider-container">
+                <div class="paineis-container">
+                    <div class="painel painel-higienizacao">
+                <h3>Higienização Completa</h3>
+                <p>Uma limpeza profunda que renova o interior do seu veículo, removendo ácaros, bactérias e odores.</p>
+            </div>
+            <div class="painel painel-carro">
+                <h3>Lavagem de Carros</h3>
+                <p>Cuidado detalhado com a pintura e acabamentos, utilizando técnicas e produtos que protegem e dão brilho.</p>
+            </div>
+            <div class="painel painel-moto">
+                <h3>Lavagem de Motos</h3>
+                <p>Limpeza minuciosa de todas as partes da sua moto, do motor às rodas, com atenção especial aos detalhes.</p>
+            </div>
+            <div class="painel painel-polimento">
+                <h3>Polimento Técnico</h3>
+                <p>Restaura o brilho da pintura, removendo micro-riscos e imperfeições, deixando a superfície espelhada.</p>
+            </div>
+            <div class="painel painel-vitrificacao">
+                <h3>Vitrificação</h3>
+                <p>Aplicação de uma camada de proteção cerâmica que garante brilho intenso e duradouro, além de repelir água e sujeira.</p>
+            </div>
+            <div class="painel painel-estofados">
+                <h3>Higienização de Estofados</h3>
+                <p>Levamos nossa expertise para sua casa, limpando e higienizando sofás, cadeiras e colchões.</p>
+            </div>
+                </div>
+            </div>
+            <button id="servicos-next-slide" class="servicos-slide-button" aria-label="Próximo serviço">&gt;</button>
+        </div>
+        <div class="section-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="sessao-trabalhos " id="veiculos">
 
         <h2>Trabalhos</h2>
 
         <div class="conteudo-trabalhos">
-            <div class="card-conteudo-descricao">
-                <div class="informacao-trabalho">
-                    <div class="imagem-trabalho">
-                        <img src="./src/img/higienizacao-sofa.jpeg">
-                    </div>
-                    <div class="especificacoes-de-trabalho">
-                        <h3>ESPECIFICAÇÃO Higienização</h3>
-                                               <p>
-                            <span class="lavagem-detalhada">Higienização Carro</span>
-
-                            <span class="tooltip">Descrição detalhada da lavagem detalhada.<br>
-                                - Higienização<br>
-                                - Desmontagem bancos<br>
-                                - Desmontagem dos estofados<br>
-                                - Higienização do plástico<br>
-                                - Limpeza do teto<br>
-                                - Humidecimento do carpete<br>
-                                - Condicionamento dos plásticos<br>
-                                - Lavagem por fora <br>
-                                - Limpeza dos vidros<br>
-                                - Polimento<br>
-                                - Aspiração no porta malas<br>
-                                - Limpeza dos pneus<br>
-                                - Montagem dos bancos<br>
-                            </span>
-            
-                            Á partir de <span>R$80</span>
-                        </p>
+            <div class="card-servico animate-on-scroll">
+                <img src="./src/imagens/card-higienizacao-auto.jpg" alt="Interior de carro impecavelmente limpo">
+                <div class="card-corpo">
+                        <h3>Higienização Automotiva</h3>
                         <p>
-                            <span class="lavagem-detalhada">Higienização para casa :</span>
-                            <span class="tooltip">
-                                    -Colchões <br>
-                                    - Almofadas<br>
-                                    -Sofás ( aquele seu sofá velho, só precisa de uma Higienização)<br>
-                            </span>
+                            <span class="lavagem-detalhada" data-tooltip-target="tooltip-higienizacao-auto">Serviço Completo</span>
+
+                            <span class="tooltip" id="tooltip-higienizacao-auto">Nosso serviço mais completo para renovar seu veículo:<br>
+                                - Higienização profunda de bancos e estofados<br>
+                                - Limpeza e condicionamento de plásticos<br>
+                                - Higienização do teto e carpete<br>
+                                - Lavagem externa detalhada<br>
+                                - Limpeza de vidros e polimento<br>
+                                - Aspiração e limpeza do porta-malas<br>
+                            </span>            
                             Á partir de <span>R$80</span>
                         </p>
-                    </div>
-
-                    <button class="solicitacao-veiculo"><a href="whatsapp://send?phone=5519987332697&text=Estou+interessado(a)+em+agendar+uma+Higienização!" target="_blank">Solicitar Trabalho</a></button>
                 </div>
+                <a href="whatsapp://send?phone=5519987332697&text=Estou+interessado(a)+em+agendar+uma+Higienização+Automotiva!" target="_blank" class="card-botao">Solicitar Higienização</a>
             </div>
-            <div class="card-conteudo-descricao">
-                <div class="informacao-trabalho">
-                    <div class="imagem-trabalho">
-                        <img src="./src/img/carro-lavando.jpeg">
-                    </div>
-                    <div class="especificacoes-de-trabalho">
-                        <h3>ESPECIFICAÇÃO Carro</h3>
+            <div class="card-servico animate-on-scroll">
+                <img src="./src/imagens/card-higienizacao-res.jpg" alt="Sofá de sala de estar limpo e com aparência de novo">
+                <div class="card-corpo">
+                        <h3>Higienização Residencial</h3>
                         <p>
-                            <span class="lavagem-detalhada"><td><i class="fas fa-wrench"></i> Lavagem Detalhada</td></span>
-                            <span class="tooltip">Descrição detalhada da lavagem simples.</span>
-                            Á partir de <span>R$80</span>
-                        </p>
-                        <p>
-                            <span class="lavagem-detalhada"><td><i class="fas fa-wrench"></i> Lavagem Simpler</td></span>
-                            <span class="tooltip">Descrição detalhada da lavagem detalhada.<br>
-                                - Limpeza dos plásticos <br>
-                                -   Interior e externo<br>
-                                -   Limpeza do teto<br>
-                                -   Limpeza do carpete<br>
-                                -   Limpeza do step<br>
-                                -   Limpeza dos bancos<br>
-                                -   Limpeza dos porta-malas<br>
-                                -   Limpeza dos borrachas<br>
-                                -   Limpeza dos cantos<br>
-                                -   Lavagem da pintura<br>
-                                -   Condicionamento dos plásticos<br>
-                                -   Enceramento<br>
-                                -   Pretinho<br>
+                            <span class="lavagem-detalhada" data-tooltip-target="tooltip-higienizacao-res">Limpeza de Estofados</span>
+                            <span class="tooltip" id="tooltip-higienizacao-res">
+                                    Deixe seus estofados novos de novo:<br>
+                                    - Limpeza profissional de Sofás<br>
+                                    - Higienização de Colchões<br>
+                                    - Limpeza de Cadeiras e Almofadas<br>
                             </span>
                             Á partir de <span>R$80</span>
                         </p>
-                    </div>
-
-                    <button class="solicitacao-veiculo"><a href="whatsapp://send?phone=5519987332697&text=Estou+interessado(a)+em+agendar+uma+lavagem+de+CARRO!" target="_blank">Solicitar Trabalho</a></button>
                 </div>
+                <a href="whatsapp://send?phone=5519987332697&text=Estou+interessado(a)+em+agendar+uma+Higienização+Residencial!" target="_blank" class="card-botao">Solicitar Orçamento</a>
             </div>
-            
-            <div class="card-conteudo-descricao">
-                <div class="informacao-trabalho">
-                    <div class="imagem-trabalho">
-                        <img src="./src/img/moto-lavando.jpeg">
-                    </div>
-                    <div class="especificacoes-de-trabalho">
-                        <h3>Especificações moto</h3>
+            <div class="card-servico animate-on-scroll">
+                <img src="./src/imagens/card-lavagem-detalhada-carro.jpg" alt="Roda de liga leve de carro esportivo perfeitamente limpa">
+                <div class="card-corpo">
+                        <h3>Lavagem Detalhada (Carro)</h3>
                         <p>
-                            <span class="lavagem-detalhada">Lavagem Simples:</span>
-                            <span class="tooltip">Descrição detalhada da lavagem simples.</span>
-                            Á partir de <span>R$80</span>
-                        </p>
-                        <p>
-                            <span class="lavagem-detalhada">Lavagem Detalhada:</span>
-                            <span class="tooltip">Oque é?:<br>
-                               - Moto <br>
-                               - Lavagem completa<br>
-                               - Kit de Relação (Correia)<br>
-                               - Limpeza dos plásticos<br>
-                               - lavagem das rodas<br>
-                               - Lavagem dos cabos<br>
-                               - lavagem dos punhos<br>
-                               - Lavagem do motor<br>
-                               - Nosso melhor <em>Banho de Espuma</em><br>
-                               - lavagem das Carenagens<br>
-                               - Finalização com protetor de motor<br>
-                               - Condicionamento dos plásticos<br>
-                               - Pretinho<br>
+                            <span class="lavagem-detalhada" data-tooltip-target="tooltip-lavagem-detalhada-carro">Serviço Premium</span>
+                            <span class="tooltip" id="tooltip-lavagem-detalhada-carro">Um tratamento completo para seu carro:<br>
+                                - Limpeza detalhada de interior e exterior<br>
+                                - Limpeza de teto, carpete, bancos e porta-malas<br>
+                                - Limpeza de borrachas e cantos de portas<br>
+                                - Lavagem técnica da pintura<br>
+                                - Condicionamento de plásticos<br>
+                                - Enceramento protetor<br>
                             </span>
                             Á partir de <span>R$80</span>
                         </p>
-                    </div>
-
-                    <button class="solicitacao-veiculo"><a href="whatsapp://send?phone=5519987332697&text=Estou+interessado(a)+em+agendar+uma+lavagem+de+MOTO!" target="_blank">Solicitar Trabalho </a></button>
                 </div>
+                <a href="whatsapp://send?phone=5519987332697&text=Estou+interessado(a)+em+agendar+uma+Lavagem+Detalhada+de+Carro!" target="_blank" class="card-botao">Solicitar Lavagem Detalhada</a>
             </div>
-
-
+            <div class="card-servico animate-on-scroll">
+                <img src="./src/imagens/card-lavagem-simples-carro.jpg" alt="Carro sedan familiar limpo e brilhando ao sol">
+                <div class="card-corpo">
+                        <h3>Lavagem Simples (Carro)</h3>
+                        <p>
+                            <span class="lavagem-detalhada" data-tooltip-target="tooltip-lavagem-simples-carro">Rápido e Eficiente</span>
+                            <span class="tooltip" id="tooltip-lavagem-simples-carro">A limpeza essencial para o dia a dia.</span>
+                            Á partir de <span>R$80</span>
+                        </p>
+                </div>
+                <a href="whatsapp://send?phone=5519987332697&text=Estou+interessado(a)+em+agendar+uma+Lavagem+Simples+de+Carro!" target="_blank" class="card-botao">Solicitar Lavagem Simples</a>
+            </div>
+            <div class="card-servico animate-on-scroll">
+                <img src="./src/imagens/card-lavagem-simples-moto.jpg" alt="Close-up de motor de moto custom cromado e limpo">
+                <div class="card-corpo">
+                        <h3>Lavagem Detalhada (Moto)</h3>
+                        <p>
+                            <span class="lavagem-detalhada" data-tooltip-target="tooltip-lavagem-detalhada-moto">Cuidado em cada detalhe</span>
+                            <span class="tooltip" id="tooltip-lavagem-detalhada-moto">Uma limpeza minuciosa para sua moto:<br>
+                               - Limpeza do kit de relação<br>
+                               - Limpeza de plásticos, rodas, cabos e punhos<br>
+                               - Lavagem detalhada do motor e carenagens<br>
+                               - Banho de espuma<br>
+                               - Finalização com protetor de motor e condicionamento de plásticos<br>
+                            </span>
+                            Á partir de <span>R$80</span>
+                        </p>
+                </div>
+                <a href="whatsapp://send?phone=5519987332697&text=Estou+interessado(a)+em+agendar+uma+Lavagem+Detalhada+de+Moto!" target="_blank" class="card-botao">Solicitar Lavagem Detalhada</a>
+            </div>
+            <div class="card-servico animate-on-scroll">
+                <img src="./src/imagens/card-lavagem-simples-moto.jpg" alt="Motocicleta do tipo naked limpa em ambiente urbano">
+                <div class="card-corpo">
+                        <h3>Lavagem Simples (Moto)</h3>
+                        <p>
+                            <span class="lavagem-detalhada" data-tooltip-target="tooltip-lavagem-simples-moto">Limpeza Essencial</span>
+                            <span class="tooltip" id="tooltip-lavagem-simples-moto">A lavagem ideal para manter sua moto sempre limpa.</span>
+                            Á partir de <span>R$80</span>
+                        </p>
+                </div>
+                <a href="whatsapp://send?phone=5519987332697&text=Estou+interessado(a)+em+agendar+uma+Lavagem+Simples+de+Moto!" target="_blank" class="card-botao">Solicitar Lavagem Simples</a>
+            </div>
+        </div>
+        <div class="ver-mais-container">
+            <button id="ver-mais-btn" class="solicitacao">Ver Mais Trabalhos</button>
         </div>
 
-        </section>
-
-        <!-- <section class="contato-email" id="contato-email">
-
-<h2>CONTATE-NOS</h2>
-<input>
-
-</section> -->
-        <!-- <selection class="contatos" id="contatos">
-    <h3>Contato:</h3>
-    <div class="contatos-secao">
-        <div>
-            <i class="bi bi-person-lines-fill"></i>
-            <span> (19) 99999-9999 </span>
-        </div>
-      <div>
-        <i class="bi bi-whatsapp"></i>
-        <span>(19) 99999-9999</span>
-      </div>
-    </div>
-   </selection> -->
+    </section>
 
         <script src="./src/script.js"></script>
 
         <footer>
-            <p>Direitos Reservados a <a href="https://github.com/RaaphaGuu">GB-Estetic</a> </p>
+            <p>Direitos Reservados a GB-Estetic</p>
         </footer>
 
 </body>
