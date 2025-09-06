@@ -212,7 +212,6 @@ body {
     padding: 80px 0; /* Remove o padding horizontal para evitar overflow */
     text-align: center;
     background-color: var(--light-bg);
-    position: relative; /* Necessário para posicionar o divisor SVG */
     /* Adicionando imagem de fundo com um gradiente claro por cima para manter a legibilidade */
     background-image: linear-gradient(rgba(234, 230, 240, 0.95), rgba(234, 230, 240, 0.9)), url('../imagens/fundo-trabalhos.jpg');
     background-position: center center;
@@ -336,8 +335,8 @@ body {
    IMAGENS DE FUNDO PARA CADA PAINEL (TEMPORÁRIAS)
    ==========================================================================
    
-   As imagens abaixo são temporárias e vêm da internet para garantir que o layout funcione.
-   Para usar suas próprias imagens, substitua a URL completa ('https://...') pelo caminho da sua imagem local.
+   Para que estas imagens funcionem, garanta que os arquivos com os nomes exatos (ex: 'painel-higienizacao.jpg')
+   estejam dentro da sua pasta 'src/imagens/'.
    
    Exemplo para usar sua imagem local:
    .painel-higienizacao { background-image: url('../imagens/painel-higienizacao.jpg'); }
@@ -349,30 +348,6 @@ body {
 .painel-polimento { background-image: url('../imagens/painel-polimento.jpg'); }
 .painel-vitrificacao { background-image: url('../imagens/painel-vitrificacao.jpg'); }
 .painel-estofados { background-image: url('../imagens/painel-estofados.jpg'); }
-
-/* ==========================================================================
-   DIVISOR DE SEÇÃO
-   ========================================================================== */
-.section-divider {
-    position: absolute;
-    bottom: -1px; /* -1px para evitar uma linha fina de separação */
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.section-divider svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 80px; /* Altura da onda do divisor */
-}
-
-.section-divider .shape-fill {
-    /* A cor deve ser a mesma do fundo da seção seguinte */
-    fill: var(--primary-color); 
-}
 
 /* ==========================================================================
    SEÇÃO DE TRABALHOS (CARDS)
